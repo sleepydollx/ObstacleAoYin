@@ -1167,6 +1167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74a0532b3d0f8b94a8a5fff89123c7ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dropper
+  timeToWait: 3
 --- !u!114 &1006647652
 MonoBehaviour:
   m_ObjectHideFlags: 0
