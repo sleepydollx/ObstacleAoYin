@@ -1,24 +1,26 @@
 # ObstacleAoYin
 
-Sebuah game 2D/3D sederhana berbasis Unity di mana pemain harus menghindari objek yang jatuh (obstacle). Dibangun sebagai project latihan untuk mempelajari collision detection, tagging system, dan game mechanics dasar di Unity.
+*[Lees dit in het Nederlands](README.nl.md)*
 
-## 🎮 Fitur
+A simple 2D/3D Unity-based game where the player has to dodge falling objects (obstacles). Built as a practice project to learn collision detection, tagging systems, and basic game mechanics in Unity.
 
-- **Obstacle Dropping** — Objek muncul dan jatuh secara otomatis setelah jeda waktu tertentu (`timeToWait`), lengkap dengan physics menggunakan Rigidbody.
-- **Collision Detection** — Mendeteksi tabrakan antara obstacle dan Player, lalu memberi reaksi visual (perubahan warna) saat objek terkena hit.
-- **Tag-based Logic** — Menggunakan sistem tag Unity (`Player`, `AoYin`) untuk membedakan objek mana yang perlu direspons.
-- **Movement & Scoring** — Terdapat sistem pergerakan (`Mover.cs`) dan skor (`Scorer.cs`) untuk melacak progres pemain.
+##  Features
 
-## 📁 Struktur Project
+- **Obstacle Dropping** — Objects appear and fall automatically after a set delay (`timeToWait`), using Rigidbody physics.
+- **Collision Detection** — Detects collisions between obstacles and the Player, then triggers a visual reaction (color change) when an object is hit.
+- **Tag-based Logic** — Uses Unity's tag system (`Player`, `AoYin`) to distinguish which objects need a response.
+- **Movement & Scoring** — Includes a movement system (`Mover.cs`) and a scoring system (`Scorer.cs`) to track player progress.
+
+##  Project Structure
 
 ```
 ObstacleAoYin/
 ├── Assets/
 │   ├── Scripts/
-│   │   ├── Dropper.cs      # Mengatur delay & drop obstacle (gravity, mesh visibility)
-│   │   ├── ObjectHit.cs    # Deteksi collision & perubahan warna saat objek kena hit
-│   │   ├── Mover.cs        # Logika pergerakan objek/Player
-│   │   └── Scorer.cs       # Sistem penghitungan skor
+│   │   ├── Dropper.cs      # Handles obstacle delay & drop (gravity, mesh visibility)
+│   │   ├── ObjectHit.cs    # Collision detection & color change on hit
+│   │   ├── Mover.cs        # Object/Player movement logic
+│   │   └── Scorer.cs       # Score tracking system
 │   ├── Materials/
 │   └── Scenes/
 │       └── SampleScene.unity
@@ -27,30 +29,30 @@ ObstacleAoYin/
 └── ObstacleAoYin.slnx
 ```
 
-## 🛠️ Requirements
+##  Requirements
 
-- [Unity Hub](https://unity.com/download) (disarankan versi LTS terbaru)
-- Unity Editor (cek versi yang cocok di `ProjectSettings/ProjectVersion.txt` setelah clone)
+- [Unity Hub](https://unity.com/download) (latest LTS version recommended)
+- Unity Editor (check `ProjectSettings/ProjectVersion.txt` after cloning for the exact version)
 
-## 🚀 Cara Menjalankan
+##  How to Run
 
-1. Clone repository ini:
+1. Clone this repository:
    ```bash
    git clone https://github.com/sleepydollx/ObstacleAoYin.git
    ```
-2. Buka Unity Hub, pilih **Add project from disk**, lalu arahkan ke folder hasil clone.
-3. Buka `Assets/Scenes/SampleScene.unity`.
-4. Tekan tombol **Play** di Unity Editor untuk mencoba game.
+2. Open Unity Hub, select **Add project from disk**, and point it to the cloned folder.
+3. Open `Assets/Scenes/SampleScene.unity`.
+4. Press **Play** in the Unity Editor to try the game.
 
-## 📝 Catatan Pengembangan
+##  Development Notes
 
-- Pastikan setiap GameObject yang relevan (Player, obstacle) sudah punya **tag** yang sesuai (`Player`, `AoYin`, dll) di Inspector, karena logika collision sangat bergantung pada tag ini.
-- Jika project menggunakan **URP/HDRP**, penggantian warna material perlu memakai `SetColor("_BaseColor", ...)`, bukan `material.color`, agar perubahan warna terlihat di runtime.
+- Make sure every relevant GameObject (Player, obstacles) has the correct **tag** set in the Inspector (`Player`, `AoYin`, etc.), since the collision logic depends heavily on these tags.
+- If the project uses **URP/HDRP**, changing a material's color at runtime requires `SetColor("_BaseColor", ...)` instead of `material.color`, otherwise the color change won't be visible.
 
-## 📌 Status
+##  Status
 
-Project ini masih dalam tahap pengembangan/latihan.
+This project is still a work in progress / learning project.
 
-## 📄 License
+##  License
 
-Belum ditentukan.
+Not yet determined.
