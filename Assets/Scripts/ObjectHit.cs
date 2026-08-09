@@ -6,7 +6,10 @@ public class ObjectHit : MonoBehaviour
     {
         if (gameObject.CompareTag("AoYin"))
             return;
-
-        GetComponent<MeshRenderer>().material.color = Color.black;
+            
+        if (gameObject.CompareTag("Player"))
+        {
+            GetComponent<MeshRenderer>().material.color = Color.black;
+        }
     }
 }

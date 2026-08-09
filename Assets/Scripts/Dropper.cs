@@ -22,8 +22,8 @@ public class Dropper : MonoBehaviour
     {
         if (Time.time > timeToWait)
         {
-            Debug.Log("Look up! :)");
-            Debug.Log("Look up or look down, but look up first!");
+            MyMeshRenderer.enabled = true;
+            MyRigidbody.useGravity = true;
         }
     }
 }
