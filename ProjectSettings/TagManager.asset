@@ -6,6 +6,7 @@ TagManager:
   tags:
   - AoYin
   - Hit
+  - player
   layers:
   - Default
   - TransparentFX
