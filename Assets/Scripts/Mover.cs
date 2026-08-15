@@ -16,8 +16,6 @@ public class Mover : MonoBehaviour
     void PrintInstruction()
     {
       Debug.Log("Welcome to my silly game!");
-      Debug.Log("Don't bump into objects!");
-      Debug.Log("Use WASD or arrow keys to move the player");
     }
 
     void MovePlayer()
