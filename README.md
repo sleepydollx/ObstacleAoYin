@@ -1,4 +1,4 @@
-# ObstacleAoYin
+# ObstacleMochi
 
 *[Lees dit in het Nederlands](README.nl.md)*
 
